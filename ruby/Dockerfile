@@ -1,4 +1,4 @@
-FROM kaorimatz/fedora:20
+FROM kaorimatz/fedora
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
