@@ -1,0 +1,1 @@
+OPTIONS='--daemonize no --bind 0.0.0.0'
