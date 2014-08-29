@@ -6,9 +6,8 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6081 --name=varnish varnish
+    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6081:6081 --name=varnish varnish
 
 ## Test
 
-    port=$(docker inspect -f '{{(index (index .NetworkSettings.Ports "6081/tcp") 0).HostPort}}' varnish)
-    curl localhost:$port
+    curl localhost:6081

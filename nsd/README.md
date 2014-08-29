@@ -6,9 +6,8 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 53/udp --name=nsd nsd
+    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 53:53/udp --name=nsd nsd
 
 ## Test
 
-    port=$(docker inspect -f '{{(index (index .NetworkSettings.Ports "53/udp") 0).HostPort}}' nsd)
-    dig @localhost -p $port localhost
+    dig @localhost localhost
