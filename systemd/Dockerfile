@@ -8,6 +8,8 @@ RUN systemctl disable crond sshd
 
 ADD dbus.service /etc/systemd/system/dbus.service
 
+ENV container docker
+
 VOLUME ["/run"]
 VOLUME ["/sys/fs/cgroup"]
 
