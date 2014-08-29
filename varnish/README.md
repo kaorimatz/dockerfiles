@@ -6,7 +6,7 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6081:6081 --name=varnish varnish
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6081:6081 --name=varnish varnish
 
 ## Test
 

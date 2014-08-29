@@ -6,7 +6,7 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --cap-add=NET_ADMIN -p 53:53/udp --name=dnsmasq dnsmasq
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro --cap-add=NET_ADMIN -p 53:53/udp --name=dnsmasq dnsmasq
 
 ## Test
 

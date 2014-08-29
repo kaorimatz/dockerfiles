@@ -6,7 +6,7 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 11211:11211 --name=memcached memcached
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 11211:11211 --name=memcached memcached
 
 ## Test
 

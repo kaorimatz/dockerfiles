@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --name=systemd systemd
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro --name=systemd systemd

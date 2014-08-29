@@ -6,7 +6,7 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:8080 --name=trafficserver trafficserver
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:8080 --name=trafficserver trafficserver
 
 ## Test
 

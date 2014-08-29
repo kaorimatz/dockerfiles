@@ -6,7 +6,7 @@
 
 ## Run
 
-    docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 3128:3128 --name=squid squid
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 3128:3128 --name=squid squid
 
 ## Test
 
