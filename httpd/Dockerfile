@@ -2,8 +2,8 @@ FROM kaorimatz/systemd
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
-RUN yum -y update && yum clean all
-RUN yum -y install httpd && yum clean all
+RUN dnf -y update && dnf clean all
+RUN dnf -y install httpd && dnf clean all
 
 ADD disable-privatetmp.conf /etc/systemd/system/httpd.service.d/
 

@@ -2,8 +2,8 @@ FROM kaorimatz/systemd
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
-RUN yum -y update && yum clean all
-RUN yum -y install varnish && yum clean all
+RUN dnf -y update && dnf clean all
+RUN dnf -y install varnish && dnf clean all
 
 ADD disable-privatetmp.conf /etc/systemd/system/varnish.service.d/
 

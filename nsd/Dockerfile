@@ -2,8 +2,8 @@ FROM kaorimatz/systemd
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
-RUN yum -y update && yum clean all
-RUN yum -y install nsd && yum clean all
+RUN dnf -y update && dnf clean all
+RUN dnf -y install nsd && dnf clean all
 
 RUN systemctl enable nsd
 

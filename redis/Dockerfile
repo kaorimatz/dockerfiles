@@ -2,8 +2,8 @@ FROM kaorimatz/systemd
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
-RUN yum -y update && yum clean all
-RUN yum -y install redis && yum clean all
+RUN dnf -y update && dnf clean all
+RUN dnf -y install redis && dnf clean all
 
 ADD options.conf /etc/systemd/system/redis.service.d/
 ADD redis /etc/sysconfig/

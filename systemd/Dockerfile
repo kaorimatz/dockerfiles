@@ -2,7 +2,7 @@ FROM kaorimatz/fedora:rawhide
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
-RUN yum -y update && yum clean all
+RUN dnf -y update && dnf clean all
 
 RUN systemctl disable crond sshd
 
