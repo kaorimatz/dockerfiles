@@ -4,8 +4,6 @@ MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
 RUN dnf -y update && dnf clean all
 
-RUN systemctl disable crond sshd
-
 ADD dbus.service /etc/systemd/system/dbus.service
 
 ENV container docker
