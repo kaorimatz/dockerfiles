@@ -11,5 +11,5 @@ RUBY_CONFIGURE_OPTS='--disable-install-doc' /ruby-build/bin/ruby-build 2.1.2 /op
 
 yum -y autoremove git tar gcc make openssl-devel libffi-devel readline-devel
 yum clean all
-rm -rf /tmp/ruby-build-*
+rm -rf /tmp/ruby-build*
 rm -rf /ruby-build
