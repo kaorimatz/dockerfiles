@@ -2,7 +2,7 @@
 
 set -e
 
-VERSIONS=(0.10.57 0.12.7)
+VERSIONS=(0.10.45 0.10.55 0.10.57 0.12.7)
 SOURCES=(Dockerfile install.sh README.md)
 
 image_name=$(cd "$(dirname "$0")" && basename "$(pwd)")
