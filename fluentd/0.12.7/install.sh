@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-FLUENTD_VERSION=@FLUENTD_VERSION@
+FLUENTD_VERSION=0.12.7
 
 yum -y install gcc make
 
