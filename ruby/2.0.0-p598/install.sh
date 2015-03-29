@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-RUBY_VERSION=@RUBY_VERSION@
+RUBY_VERSION=2.0.0-p598
 
 yum -y install git tar gcc make openssl-devel libffi-devel readline-devel
 
