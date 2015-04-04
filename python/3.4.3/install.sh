@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-PYTHON_VERSION=@PYTHON_VERSION@
+PYTHON_VERSION=3.4.3
 
 yum -y install git gcc tar make bzip2-devel openssl-devel readline-devel sqlite-devel
 
