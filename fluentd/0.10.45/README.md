@@ -6,8 +6,8 @@
 
 ## Run
 
-    docker run --rm -v $(pwd)/.etc/fluent:/etc/fluent --name=fluentd fluentd:0.10.45 /opt/ruby/bin/fluentd -s
-    docker run -i -t -v $(pwd)/.etc/fluent:/etc/fluent --name=fluentd fluentd:0.10.45 /opt/ruby/bin/fluentd
+    docker run --rm -v /path/to/fluent:/etc/fluent --name=fluentd fluentd:0.10.45 /opt/ruby/bin/fluentd -s
+    docker run -i -t -v /path/to/fluent:/etc/fluent --name=fluentd fluentd:0.10.45 /opt/ruby/bin/fluentd
 
 ## Test
 

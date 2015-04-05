@@ -6,7 +6,7 @@
 
 ## Run
 
-    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v /path/to/bird.conf:/etc/bird.conf --name=bird bird
+    docker run -d -t -v /sys/fs/cgroup:/sys/fs/cgroup:ro --name=bird bird
 
 ## Test
 
