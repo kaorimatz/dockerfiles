@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=ocaml ocaml /bin/bash
+    docker run -i -t --name=ocaml ocaml /opt/ocaml/bin/ocaml

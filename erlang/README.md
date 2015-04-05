@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=erlang erlang /bin/bash
+    docker run -i -t --name=erlang erlang /opt/erlang/bin/erl

@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=go go /bin/bash
+    docker run -i -t --name=go go bash

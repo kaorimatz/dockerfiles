@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=rust rust /bin/bash
+    docker run -i -t --name=rust rust bash

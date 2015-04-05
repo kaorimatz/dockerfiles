@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=node node /bin/bash
+    docker run -i -t --name=node node /opt/node/bin/node

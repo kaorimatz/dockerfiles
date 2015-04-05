@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=python python:@PYTHON_VERSION@ /bin/bash
+    docker run -i -t --name=python python:@PYTHON_VERSION@ /opt/python/bin/python

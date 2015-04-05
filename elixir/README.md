@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=elixir elixir /bin/bash
+    docker run -i -t --name=elixir elixir bash

@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=perl perl /bin/bash
+    docker run -i -t --name=perl perl bash

@@ -6,4 +6,4 @@
 
 ## Run
 
-    docker run -i -t --name=python python:2.7.9 /bin/bash
+    docker run -i -t --name=python python:2.7.9 /opt/python/bin/python
