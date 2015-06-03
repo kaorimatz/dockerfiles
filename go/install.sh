@@ -4,7 +4,7 @@ set -e
 set -u
 set -x
 
-GO_VERSION=1.3.1
+GO_VERSION=1.4.2
 GO_SOURCE_ARCHIVE=go${GO_VERSION}.src.tar.gz
 GO_SOURCE=go
 
