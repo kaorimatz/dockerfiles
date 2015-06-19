@@ -2,7 +2,7 @@ FROM kaorimatz/ruby
 
 MAINTAINER Satoshi Matsumoto <kaorimatz@gmail.com>
 
-RUN yum -y update && yum clean all
+RUN dnf -y update && dnf clean all
 
 ADD install.sh /
 RUN chmod +x /install.sh && /install.sh && rm /install.sh

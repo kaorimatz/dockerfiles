@@ -8,7 +8,7 @@ NODE_VERSION=0.10.28
 NODE_SOURCE_ARCHIVE=node-v${NODE_VERSION}.tar.gz
 NODE_SOURCE=node-v${NODE_VERSION}
 
-yum -y install tar gcc make gcc-c++ libuv-devel v8-devel c-ares-devel zlib-devel http-parser-devel openssl-devel
+dnf -y install tar gcc make gcc-c++ libuv-devel v8-devel c-ares-devel zlib-devel http-parser-devel openssl-devel
 
 curl http://nodejs.org/dist/v0.10.28/${NODE_SOURCE_ARCHIVE} > /${NODE_SOURCE_ARCHIVE}
 tar zxf /${NODE_SOURCE_ARCHIVE} -C /
@@ -24,6 +24,6 @@ tar zxf /${NODE_SOURCE_ARCHIVE} -C /
 )
 make -C /${NODE_SOURCE} install
 
-yum -y autoremove tar gcc make gcc-c++ libuv-devel v8-devel c-ares-devel zlib-devel http-parser-devel openssl-devel
-yum clean all
+dnf -y remove tar gcc make gcc-c++ libuv-devel v8-devel c-ares-devel zlib-devel http-parser-devel openssl-devel
+dnf clean all
 rm -rf /${NODE_SOURCE_ARCHIVE} /${NODE_SOURCE}
