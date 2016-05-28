@@ -6,3 +6,5 @@ RUN dnf -y update && dnf clean all
 
 ADD install.sh /
 RUN chmod +x /install.sh && /install.sh && rm /install.sh
+
+ENV PATH /opt/elixir/bin:$PATH
